@@ -3,11 +3,11 @@ package Tasks;
 import javax.naming.spi.DirObjectFactory;
 
 public class LinearProgram {
-    int getFirstFunctionValue(int a, int b, int c) {
+   public int getFirstFunctionValue(int a, int b, int c) {
         return ((a - 3) * b / 2) + c;
     }
 
-    double getSecondFunctionValue(int a, int b, int c) {
+    public double getSecondFunctionValue(int a, int b, int c) {
         return (b + Math.sqrt(Math.pow(b, 2) + 4 * a * c)) / 2 - Math.pow(a, 3) * c + Math.pow(b, -2);
     }
 
@@ -15,7 +15,7 @@ public class LinearProgram {
         return ((Math.sin(x) + Math.cos(y)) / (Math.cos(x) - Math.sin(y))) + Math.tan(x * y);
     }
 
-    double swapIntegerPartWithFractional(double swapNumber) {
+    public double swapIntegerPartWithFractional(double swapNumber) {
         String[] temp = Double.toString(swapNumber).split("\\.");
         return Double.parseDouble(temp[1] + "." + temp[0]);
     }
